@@ -4,11 +4,12 @@ import axios from "axios";
 const initialState = {
     loading: false,
     countriesData: {},
+    global: {},
     error: ''
 }
 
-export const fetchCountries = createAsyncThunk('countries/fetchCountries', () => {
-    return axios
+export const fetchCountries = createAsyncThunk('countries/fetchCountries', async () => {
+    return await axios
         .get('https://api.covid19api.com/summary')
         .then((response) => response.data)
 })
@@ -21,13 +22,15 @@ const HomeSlice = createSlice({
         })
         builder.addCase(fetchCountries.fulfilled, (state, action) => {
             state.loading = false
-            state.countriesData = action.payload
+            state.countriesData = action.payload.Countries
+            state.global = action.payload.Global
 
             state.error = ''
         })
         builder.addCase(fetchCountries.rejected, (state, action) => {
             state.loading = false
-            state.countriesData = []
+            state.countriesData = {}
+            state.global = {}
 
             state.error = action.error.message
         })

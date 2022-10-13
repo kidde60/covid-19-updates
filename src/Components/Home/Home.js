@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
 import { fetchCountries } from '../../Redux/Home/Home'
-import { fetchDetails } from '../../Redux/Home/Detail'
+// import { fetchDetails } from '../../Redux/Home/Detail'
 
 import Details from "../Details/Details";
 const Home = () => {

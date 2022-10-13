@@ -1,16 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from "react-router-dom";
 import { fetchCountries } from '../../Redux/Home/Home'
+import { fetchDetails } from '../../Redux/Home/Detail'
+
 import Details from "../Details/Details";
 const Home = () => {
     const countries = useSelector((state) => state.Home.countriesData);
     const global = useSelector((state) => state.Home.global);
     // console.log(countries)
     // console.log(global)
+    // const Detail = useSelector((state) => state.Detail.countriesDetails)
+    // console.log(Detail)
+    // Detail.map((data) => (
+    //     <h2>{data.Country}</h2>
+    // ))
+
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(fetchCountries())
     }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(fetchDetails())
+    // }, [dispatch])
 
     const [searchTerm, setSearchTerm] = useState("")
     return (
@@ -44,16 +56,19 @@ const Home = () => {
                     }).map((country) => (
                         //  {TotalRecovered,  TotalDeaths,  TotalRecovered } = country
                         <div key={country.ID}>
-                            <li>
-                                <h2>{country.Country}</h2>
-                                <h3>Total Confirmed: {country.TotalConfirmed}</h3>
-                                <h3>Total Deaths: {country.TotalDeaths}</h3>
-                                <h3>New Confirmed: {country.NewConfirmed}</h3>
+                            <Link to={`/Details/${country.Country}`}>
+                                {/* onClick={dispatch(fetchDetails(`{data.Country}`))} */}
+                                <li>
+                                    <h2>{country.Country}</h2>
+                                    <h3>Total Confirmed: {country.TotalConfirmed}</h3>
+                                    <h3>Total Deaths: {country.TotalDeaths}</h3>
+                                    <h3>New Confirmed: {country.NewConfirmed}</h3>
 
 
 
-                            </li>
-                            <button type="button">Details</button>
+                                </li>
+                                <button type="button" >Details</button>
+                            </Link>
                         </div>
                     ))}
                 </ul>

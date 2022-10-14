@@ -39,6 +39,10 @@ a {
   color: black;
 }
 
+.searchBtn {
+  height: 35px;
+}
+
 .statistics {
   background: rgb(134, 8, 29);
   margin-left: 5%;
@@ -46,7 +50,6 @@ a {
   align-items: center;
   gap: 20px;
 }
-
 
 .country {
   padding: 0 5% 5%;
@@ -75,7 +78,6 @@ a {
   grid-template-columns: auto auto auto;
 }
 
-
 .list-item {
   display: flex;
   gap: 5px;
@@ -91,7 +93,6 @@ a {
 
 .item:nth-child(odd) {
   background: rgb(134, 8, 29);
-
 }
 
 .list-items {
@@ -114,7 +115,6 @@ a {
 
 .background {
   padding: 5% 2%;
-
 }
 
 .HomeBtn {
@@ -130,7 +130,6 @@ a {
 
 .Details {
   padding: 10px 10%;
-
 }
 
 .flex {
@@ -139,7 +138,6 @@ a {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-
 }
 
 .flex:nth-child(even) {
@@ -148,7 +146,6 @@ a {
 
 .flex:nth-child(odd) {
   background: rgb(134, 8, 29);
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -231,7 +228,6 @@ a {
 
   .item:nth-child(4n+0) {
     background: rgb(134, 8, 29);
-
   }
 
   .BTN {

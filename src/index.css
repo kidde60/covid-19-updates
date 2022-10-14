@@ -2,13 +2,13 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(114, 5, 23);
-  color: #c2c2c2;
+  color: #f2f2f2;
   overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  color: #c2c2c2;
+  color: #f2f2f2;
 }
 
 .search {
@@ -47,9 +47,6 @@ a {
   gap: 20px;
 }
 
-/* .image {
-  margin-left: 5%;
-} */
 
 .country {
   padding: 0 5% 5%;
@@ -94,6 +91,7 @@ a {
 
 .item:nth-child(odd) {
   background: rgb(134, 8, 29);
+
 }
 
 .list-items {
@@ -112,4 +110,150 @@ a {
 
 .break {
   word-wrap: break-word;
+}
+
+.background {
+  padding: 5% 2%;
+
+}
+
+.HomeBtn {
+  margin: 5%;
+  height: 20px;
+  font-size: 20px;
+  border: #fff 1px solid;
+  border-radius: 30px;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Details {
+  padding: 10px 10%;
+
+}
+
+.flex {
+  padding: 5px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+
+}
+
+.flex:nth-child(even) {
+  background: rgb(161, 10, 35);
+}
+
+.flex:nth-child(odd) {
+  background: rgb(134, 8, 29);
+
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+
+  .input {
+    padding: 5% 0;
+  }
+
+  .input input {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .search h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .image img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .global {
+    width: 100%;
+  }
+
+  .global h2 {
+    font-size: 25px;
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
+
+  .span {
+    font-size: 18px;
+  }
+
+  .country {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .country h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .list-item {
+    padding: 0;
+    gap: 0;
+  }
+
+  .list-items {
+    padding: 10px 0 10px 5px;
+    font-size: 15px;
+  }
+
+  .item:nth-child(3n+0) {
+    background: rgb(161, 10, 35);
+  }
+
+  .item:nth-child(4n+0) {
+    background: rgb(134, 8, 29);
+
+  }
+
+  .BTN {
+    margin-top: 5%;
+    height: 15px;
+    font-size: 15px;
+  }
+
+  .HomeBtn {
+    margin: 10px 0;
+  }
+
+  .Details {
+    padding: 0;
+    margin-top: 5%;
+  }
+
+  .flex {
+    padding: 7% 5px;
+  }
+
+  .dt {
+    font-size: 15px;
+  }
 }

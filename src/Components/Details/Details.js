@@ -12,22 +12,49 @@ const Details = () => {
     return (
         <div>
 
-            <div >
+            <div className="background" >
                 {Detail.filter((country) => {
                     if (CountryId === country.Country) {
                         return country
                     }
                 }).map((data) => (
                     <div key={data.ID}>
-                        <div>
-                            <button type="button" onClick={() => { navigate("/"); }} >&#8592;</button>
-                            <h2>Country: {data.Country}</h2>
-                            <h2>Last Updated: {data.Date}</h2>
-                            <h2>New Confirmed Cases: {data.NewConfirmed}</h2>
-                            <h2>New Deaths: {data.NewDeaths}</h2>
-                            <h2>New Recovery : {data.NewRecovered}</h2>
-                            <h2>Total Confirmed Cases: {data.TotalConfirmed}</h2>
-                            <h2>Total Deaths: {data.TotalDeaths}</h2>
+                        <span className="HomeBtn" onClick={() => { navigate("/"); }} >&#8592;</span>
+                        <div className="Details">
+                            <div className="flex">
+                                <h2>Country</h2>
+                                <h2>{data.Country}</h2>
+                            </div>
+                            <div className="flex">
+                                <h2>Last Updated</h2>
+                                <h2 className="dt">{data.Date}</h2>
+                            </div>
+                            <div className="flex">
+                                <h2>New Confirmed Cases</h2>
+                                <h2>{data.NewConfirmed}</h2>
+                            </div>
+                            <div className="flex">
+                                <h2>New Deaths</h2>
+                                <h2>{data.NewDeaths}</h2>
+                            </div>
+                            <div className="flex">
+                                <h2>New Recovery</h2>
+                                <h2>{data.NewRecovered}</h2>
+                            </div>
+                            <div className="flex">
+                                <h2>Total Confirmed Cases</h2>
+                                <h2>{data.TotalConfirmed}</h2>
+                            </div>
+                            <div className="flex">
+                                <h2>Total Deaths</h2>
+                                <h2>{data.TotalDeaths}</h2>
+                            </div>
+
+
+
+
+
+
                         </div>
                     </div>
                 ))

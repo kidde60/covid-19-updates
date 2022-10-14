@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
-import { fetchCountries } from '../../Redux/Home/Home'
+import { fetchCountries } from '../../Redux/Home/Home';
+import Image from '../../images/images.jpg'
 
 const Home = () => {
     const countries = useSelector((state) => state.Home.countriesData);
@@ -14,52 +15,62 @@ const Home = () => {
     const [searchTerm, setSearchTerm] = useState("")
     return (
         <>
-            <div>
+            <div className="search">
+                <div className="input">
 
-                <input type="text" placeholder="Search Country ...."
-                    onChange={event => {
-                        setSearchTerm(event.target.value)
-                    }}
-                />
+                    <input type="text" placeholder="Search Country ...."
+                        onChange={event => {
+                            setSearchTerm(event.target.value)
+                        }}
+                    />
+                    <button type="submit" className="searchBtn">button</button>
+                </div>
+                <h1>GLOBAL COVID-19 STATISTICS</h1>
             </div>
-            <div>
-                <h2>Date: {global.Date}</h2>
-                <h2>New Confirmed: {global.NewConfirmed}</h2>
-                <h2>New Deaths: {global.NewDeaths}</h2>
-                <h2>Total Confirmed: {global.TotalConfirmed}</h2>
-                <h2>Total Deaths: {global.TotalDeaths}</h2>
+            <div className="statistics">
+                <div className="image">
+                    <img src={Image} alt="Covid-19-image" height={300} />
+                </div>
+                <div className="global">
+                    <h2>Date: <span className="span">{global.Date}</span> </h2>
+                    <h2>New Confirmed: {global.NewConfirmed}</h2>
+                    <h2>New Deaths: {global.NewDeaths}</h2>
+                    <h2>Total Confirmed: {global.TotalConfirmed}</h2>
+                    <h2>Total Deaths: {global.TotalDeaths}</h2>
+                </div>
             </div>
-            <h1>Current Covid 19 statistics per country</h1>
-            {countries.loading && <div>loading ...</div>}
-            {!countries.loading && countries.error ? <div>error{countries.error}</div> : null}
-            {!countries.loading && countries.length ? (
-                <ul>
-                    {countries.filter((country) => {
-                        if (searchTerm == "") {
-                            return country
-                        } else if (country.Country.toLowerCase().includes(searchTerm.toLocaleLowerCase())) {
-                            return country
-                        }
-                    }).map((country) => (
+            <div className="country">
+                <h1>Current Covid 19 statistics per country</h1>
+                {countries.loading && <div>loading ...</div>}
+                {!countries.loading && countries.error ? <div>error{countries.error}</div> : null}
+                {!countries.loading && countries.length ? (
+                    <div className="list">
+                        {countries.filter((country) => {
+                            if (searchTerm == "") {
+                                return country
+                            } else if (country.Country.toLowerCase().includes(searchTerm.toLocaleLowerCase())) {
+                                return country
+                            }
+                        }).map((country) => (
 
-                        <div key={country.ID}>
-                            <Link to={`/Details/${country.Country}`}>
+                            <div className="item" key={country.ID}>
+                                <Link to={`/Details/${country.Country}`}>
+                                    <div className="list-item">
+                                        <div className="list-items">
+                                            <h2 className="break">{country.Country}</h2>
+                                            <h3>Total Confirmed: {country.TotalConfirmed}</h3>
+                                            <h3>Total Deaths: {country.TotalDeaths}</h3>
+                                            <h3>New Confirmed: {country.NewConfirmed}</h3>
 
-                                <li>
-                                    <h2>{country.Country}</h2>
-                                    <h3>Total Confirmed: {country.TotalConfirmed}</h3>
-                                    <h3>Total Deaths: {country.TotalDeaths}</h3>
-                                    <h3>New Confirmed: {country.NewConfirmed}</h3>
-
-
-
-                                </li>
-                                <button type="button" >Details</button>
-                            </Link>
-                        </div>
-                    ))}
-                </ul>
-            ) : null}
+                                        </div>
+                                        <span className="BTN">&#8594;</span>
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                ) : null}
+            </div>
         </>
     )
 };

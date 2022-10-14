@@ -1,13 +1,115 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: rgb(114, 5, 23);
+  color: #c2c2c2;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: #c2c2c2;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search h1 {
+  font-size: 40px;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  padding: 5% 10px 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input input {
+  width: 50%;
+  height: 30px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  background: #c2c2c2;
+  color: black;
+}
+
+.statistics {
+  background: rgb(134, 8, 29);
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* .image {
+  margin-left: 5%;
+} */
+
+.country {
+  padding: 0 5% 5%;
+}
+
+.global {
+  width: 40%;
+}
+
+.global h2 {
+  font-size: 30px;
+}
+
+.span {
+  font-size: 25px;
+}
+
+.country h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+.list-item {
+  display: flex;
+  gap: 5px;
+}
+
+/* .item {
+  border: #c2c2c2 1px solid;
+} */
+
+.item:nth-child(even) {
+  background: rgb(161, 10, 35);
+}
+
+.item:nth-child(odd) {
+  background: rgb(134, 8, 29);
+}
+
+.list-items {
+  padding-left: 5%;
+}
+
+.BTN {
+  margin-top: 5%;
+  height: 20px;
+  font-size: 20px;
+  border: #c2c2c2 1px solid;
+  border-radius: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.break {
+  word-wrap: break-word;
 }

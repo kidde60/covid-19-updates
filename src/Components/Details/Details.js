@@ -20,7 +20,7 @@ const Details = () => {
                 }).map((data) => (
                     <div key={data.ID}>
                         <div>
-                            <button type="button" onClick={() => { navigate("/"); }} >Home</button>
+                            <button type="button" onClick={() => { navigate("/"); }} >&#8592;</button>
                             <h2>Country: {data.Country}</h2>
                             <h2>Last Updated: {data.Date}</h2>
                             <h2>New Confirmed Cases: {data.NewConfirmed}</h2>

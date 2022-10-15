@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Covid19 Tracker
+# Covid19 Tracker Web app
 
 > A web app built with Covid-19-API that displays Covid 19 cases, deaths and recovery per country in the entire World
 
@@ -19,7 +19,7 @@
 
 ## Video Demo 
 
-[Video Demo](https://www.loom.com/share/27ba3ebbb2634175b0160631ee638f28)
+[Video Demo](https://drive.google.com/file/d/15cvM6YNoK8lCaV5BIxsvKP2Tg24AxtFp/view?usp=sharing)
 
 ## ScreenShots
 ### Desktop screen
@@ -62,7 +62,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **PROMISE OKECHUKWU**
+👤 **KIDDE GEORGE WILLIAM**
 
 - GitHub: [@Kidde George William](https://github.com/kidde60)
 - Twitter: [@kidde](https://twitter.com/prOmzzy)

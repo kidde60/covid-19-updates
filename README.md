@@ -19,7 +19,7 @@
 
 ## Video Demo 
 
-[Video Demo](https://drive.google.com/file/d/15cvM6YNoK8lCaV5BIxsvKP2Tg24AxtFp/view?usp=sharing)
+[Video Demo](https://drive.google.com/file/d/1j_IRAetuuERc70IK9py7g9yiDCXRAI8b/view?usp=sharing)
 
 ## ScreenShots
 ### Desktop screen
@@ -32,14 +32,7 @@
 
 
 ## Getting Started
-
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-- Install node.js and npm.
-- Install Git.
-
 ### Setup
 
 - Clone the repository by running the following command in your terminal:
@@ -49,7 +42,14 @@ To get a local copy up and running follow these simple example steps.
     cd space-hub
 
 ### Install
-- Install the dependencies by running `npm i` in your terminal
+- To Install this project on your local enviroment you just need to have install `npm` on your local machine.
+
+### Run tests
+- To run this project go to you terminal and run `npm test`.
+### Prerequisites
+
+- Install node.js and npm.
+- Install Git.
 
 ### Usage
 
@@ -60,7 +60,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-## Authors
+## Author
 
 👤 **KIDDE GEORGE WILLIAM**
 

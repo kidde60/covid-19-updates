@@ -14,7 +14,7 @@
 
 ## Live Demo 
 
-[Live Demo](https://c0r0natracker.netlify.app/)
+[Live Demo](https://634b18b7735def69fb36e1ca--musical-sunburst-e30cc3.netlify.app/)
 
 
 ## Video Demo 
@@ -43,7 +43,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Clone the repository by running the following command in your terminal:
-    git clone https://github.com/PromzzyKoncepts/Covid19-Tracker-App.git
+    git clone https://github.com/kidde60/covid-19-updates
     
 - Change your directory by by running the following command in your terminal:
     cd space-hub
@@ -64,9 +64,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **PROMISE OKECHUKWU**
 
-- GitHub: [@promzzykoncepts](https://github.com/PromzzyKoncepts)
-- Twitter: [@pr0mzzy](https://twitter.com/prOmzzy)
-- LinkedIn: [promiseokechukwu](https://linkedin.com/in/promiseokechukwu)
+- GitHub: [@Kidde George William](https://github.com/kidde60)
+- Twitter: [@kidde](https://twitter.com/prOmzzy)
+- LinkedIn: [Kidde George William](https://www.linkedin.com/in/kidde-george-william/)
 
 
 ## 🤝 Contributing

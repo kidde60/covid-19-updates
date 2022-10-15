@@ -1,12 +1,15 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer className="footer">
-    <h3 className="footer-h3">
-      <span>Created By</span>
-      <a className="footer-link" href="https://github.com/kidde60"> Kidde George William</a>
+  <div className="footer">
+    <h3 className="footer-heading">
+      Covid19
+      {' '}
+      <span className="span">Tracker</span>
     </h3>
-  </footer>
+    <p className="footer-text">All Rights Reserved,</p>
+    <p className="footer-text"> &copy; Kidde George William</p>
+  </div>
 );
 
 export default Footer;

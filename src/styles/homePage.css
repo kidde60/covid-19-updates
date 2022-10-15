@@ -1,0 +1,107 @@
+/* styles-for-homepage */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.banner-div {
+  display: flex;
+  background-color: rgb(219, 49, 120);
+  justify-content: space-between;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.img-banner {
+  width: 50vw;
+  height: 30vh;
+  opacity: 0.8;
+  border-radius: 50px 0 0 50px;
+}
+
+.banner-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.banner-h2 {
+  color: #fff;
+  font-family: 'Gill Sans', sans-serif;
+  margin: 10px 15px;
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.banner-h3 {
+  color: #fff;
+  font-family: 'Gill Sans', sans-serif;
+  margin: 0 15px;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.banner-h4 {
+  color: #fff;
+  font-family: 'Gill Sans', sans-serif;
+  margin: 0 15px;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.search-bar-h3,
+.search-bar-h4 {
+  font-weight: 600;
+}
+
+.search-bar-input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #fff;
+  background-color: rgb(219, 49, 120);
+  border-radius: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-h2 {
+    font-size: 30px;
+    margin: 50px 150px 30px 0;
+  }
+
+  .banner-h3 {
+    font-size: 22px;
+  }
+
+  .banner-h4 {
+    font-size: 15px;
+  }
+
+  .search-bar-input {
+    width: 450px;
+    padding: 10px;
+  }
+
+  .img-banner {
+    width: 45vw;
+    height: 40vh;
+  }
+
+  .categories {
+    margin: 0 100px;
+  }
+
+  .banner-div {
+    margin: 10px 100px;
+  }
+}

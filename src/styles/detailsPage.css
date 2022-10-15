@@ -1,0 +1,56 @@
+/* style-for-details-page */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.back-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.details-top-section {
+  margin: 50px 0;
+}
+
+.radius {
+  border-radius: 50px 50px 0 0;
+}
+
+.radius2 {
+  border-radius: 0 0 50px 50px;
+}
+
+.details-div {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(219, 49, 120);
+  border: 1px solid #fff;
+}
+
+.details-div:nth-child(even) {
+  background: linear-gradient(to right, rgb(219, 49, 120), #c71585);
+}
+
+.detail-name,
+.detail-data {
+  margin: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 100;
+}
+
+.wait-p {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 992px) {
+  .details-top-section {
+    margin: 50px 100px;
+  }
+}

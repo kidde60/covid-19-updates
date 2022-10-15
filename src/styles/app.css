@@ -1,0 +1,6 @@
+/* styles-for-app */
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, rgb(219, 49, 120), #c71585), url('../asset/background.jpg') center center;
+}

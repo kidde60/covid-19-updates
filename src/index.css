@@ -83,10 +83,6 @@ a {
   gap: 5px;
 }
 
-/* .item {
-  border: #c2c2c2 1px solid;
-} */
-
 .item:nth-child(even) {
   background: rgb(161, 10, 35);
 }
@@ -148,7 +144,7 @@ a {
   background: rgb(134, 8, 29);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   * {
     padding: 0;
     margin: 0;

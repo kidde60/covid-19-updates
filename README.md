@@ -15,10 +15,10 @@ Countries Information is a simple react capstone project that displays covid-19 
 
 ## Live Demo 
 
-[link]()
+[link](https://wondrous-bubblegum-7113a0.netlify.app/)
 
 ## Video Demo
-[live]()
+[live](https://drive.google.com/file/d/18RPWhmcZUwmRXfrNIKrDJqgqFbmX16G0/view?usp=sharing)
 
 ## Getting Started
 # In order to obtain a local copy of this repository run:

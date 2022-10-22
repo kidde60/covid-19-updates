@@ -1,14 +1,8 @@
-// import renderer from 'react-test-renderer';
-// import { Provider } from 'react-redux';
-// import '@testing-library/jest-dom';
-// import Home from '../../Components/Home/Home';
-// import store from './mock/configureStore';
+import renderer from 'react-test-renderer';
 
-// it('Check if the component has changed', async () => {
-//   const tree = renderer.create(
-//     <Provider store={store}>
-//       <Home />
-//     </Provider>,
-//   ).toJSON();
-//   expect(tree).toMatchSnapshot();
-// });
+describe('Currency display container', () => {
+  it('Confirm that the currency display renders correctly', () => {
+    const tree = renderer.create(<fetchCountries />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

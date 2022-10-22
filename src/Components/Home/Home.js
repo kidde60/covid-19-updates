@@ -26,7 +26,7 @@ const Home = () => {
                             setSearchTerm(event.target.value);
                         }}
                     />
-                    <button type="submit" className="searchBtn">search</button>
+
                 </div>
                 <h1>GLOBAL COVID-19 STATISTICS</h1>
             </div>

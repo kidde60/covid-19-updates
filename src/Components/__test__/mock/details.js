@@ -1,81 +1,60 @@
-// import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+const Details = () => {
+  const countries = [
+    {
+      Country: 'Afghanistan',
+      Date: '2022-10-21T18:09:47.252Z',
+      NewConfirmed: 193,
+      NewDeaths: 2,
+      NewRecovered: 0,
+      TotalConfirmed: 201750,
+      TotalDeaths: 7814,
 
-// const initialState = {
-//   countryDetails: [],
-// };
+    },
+  ];
+  return (
+    <div>
 
-// export const getDetails = createAsyncThunk(
-//   'countries/getDetailsData',
-//   async () => ({
-//     name: 'Ghana',
-//     capital: 'Accra',
-//     timezone: 'UTC+00',
-//     region: 'Africa',
-//     population: '31000',
-//     flag: 'flags.png',
-//     independent: true,
-//     unMember: true,
-//     currencies: '$',
-//   }),
-// );
+      <div className="background">
+        {countries.map((data) => (
+          <div key={data.ID}>
 
-// const detailsSlice = createSlice({
-//   name: 'country',
-//   initialState,
-//   reducers: {
-//   },
+            <div className="Details">
+              <div className="flex">
+                <h2>Country</h2>
+                <h2>{data.Country}</h2>
+              </div>
+              <div className="flex">
+                <h2>Last Updated</h2>
+                <h2 className="dt">{data.Date}</h2>
+              </div>
+              <div className="flex">
+                <h2>New Confirmed Cases</h2>
+                <h2>{data.NewConfirmed}</h2>
+              </div>
+              <div className="flex">
+                <h2>New Deaths</h2>
+                <h2>{data.NewDeaths}</h2>
+              </div>
+              <div className="flex">
+                <h2>New Recovery</h2>
+                <h2>{data.NewRecovered}</h2>
+              </div>
+              <div className="flex">
+                <h2>Total Confirmed Cases</h2>
+                <h2>{data.TotalConfirmed}</h2>
+              </div>
+              <div className="flex">
+                <h2>Total Deaths</h2>
+                <h2>{data.TotalDeaths}</h2>
+              </div>
 
-//   extraReducers: {
-//     [getDetails.fulfilled]:
-//     (state, { payload }) => ({
-//       countryDetails: payload,
-//     }),
-//   },
-// });
+            </div>
+          </div>
+        ))}
+      </div>
 
-// export default detailsSlice.reducer;
-
-/* eslint-disable */
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
-export const fetchDetails = createAsyncThunk('countries/fetchCountries',
-  async () => ({
-    Country: "Afghanistan",
-    Date: "2022-10-21T16:55:45.724Z",
-    NewConfirmed: 193,
-    NewDeaths: 2,
-    NewRecovered: 0,
-    TotalConfirmed: 201750,
-    TotalDeaths: 7814
-
-  })
-)
-const initialState = {
-  loading: false,
-  countriesDetails: {},
-  error: '',
+    </div>
+  );
 };
-const DetailSlice = createSlice({
-  name: 'details',
-  initialState,
-  extraReducers: (builder) => {
-    builder.addCase(fetchDetails.pending, (state) => {
-      state.loading = true;
-    });
-    builder.addCase(fetchDetails.fulfilled, (state, action) => {
-      state.loading = false;
-      state.countriesDetails = action.payload.Countries;
 
-      state.error = '';
-    });
-    builder.addCase(fetchDetails.rejected, (state, action) => {
-      state.loading = false;
-      state.countriesDetails = {};
-
-      state.error = action.error.message;
-    });
-  },
-});
-
-export default DetailSlice.reducer;
-
+export default Details;

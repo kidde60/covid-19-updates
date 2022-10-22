@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import HomeReducer from './home';
-import DetailSlice from './details';
+import HomeReducer from './homeSlice';
+import DetailSlice from './detailReducer';
 
 const store = configureStore({
   reducer: {
-    Home: HomeReducer,
+    country: HomeReducer,
     Detail: DetailSlice,
   },
 });

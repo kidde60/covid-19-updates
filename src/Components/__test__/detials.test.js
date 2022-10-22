@@ -1,14 +1,9 @@
-// import renderer from 'react-test-renderer';
-// import { Provider } from 'react-redux';
-// import '@testing-library/jest-dom';
-// import Details from '../../Components/Details/Details';
-// import store from './mock/configureStore';
+import renderer from 'react-test-renderer';
+import Details from './mock/details';
 
-// it('Check if the component has changed', async () => {
-//   const tree = renderer.create(
-//     <Provider store={store}>
-//       <Details />
-//     </Provider>,
-//   ).toJSON();
-//   expect(tree).toMatchSnapshot();
-// });
+describe('Country details', () => {
+  it('Check if it renders correctly', () => {
+    const tree = renderer.create(<Details />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

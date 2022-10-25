@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Country details Check if it renders correctly 1`] = `
+<div>
+  <div
+    className="background"
+  >
+    <div>
+      <div
+        className="Details"
+      >
+        <div
+          className="flex"
+        >
+          <h2>
+            Country
+          </h2>
+          <h2>
+            Afghanistan
+          </h2>
+        </div>
+        <div
+          className="flex"
+        >
+          <h2>
+            Last Updated
+          </h2>
+          <h2
+            className="dt"
+          >
+            2022-10-21T18:09:47.252Z
+          </h2>
+        </div>
+        <div
+          className="flex"
+        >
+          <h2>
+            New Confirmed Cases
+          </h2>
+          <h2>
+            193
+          </h2>
+        </div>
+        <div
+          className="flex"
+        >
+          <h2>
+            New Deaths
+          </h2>
+          <h2>
+            2
+          </h2>
+        </div>
+        <div
+          className="flex"
+        >
+          <h2>
+            New Recovery
+          </h2>
+          <h2>
+            0
+          </h2>
+        </div>
+        <div
+          className="flex"
+        >
+          <h2>
+            Total Confirmed Cases
+          </h2>
+          <h2>
+            201750
+          </h2>
+        </div>
+        <div
+          className="flex"
+        >
+          <h2>
+            Total Deaths
+          </h2>
+          <h2>
+            7814
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
